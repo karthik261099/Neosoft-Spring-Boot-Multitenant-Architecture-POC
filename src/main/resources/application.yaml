@@ -1,0 +1,42 @@
+server:
+  port: 8080
+
+#spring:
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#  flyway:
+#    enabled: false
+#tenants:
+#  datasources:
+#    vw:
+#      jdbcUrl: jdbc:h2:mem:vw
+#      driverClassName: org.h2.Driver
+#      username: sa
+#      password: password
+#    bmw:
+#      jdbcUrl: jdbc:h2:mem:bmw
+#      driverClassName: org.h2.Driver
+#      username: sa
+#      password: password
+
+spring:
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+  hibernate:
+    hbm2ddl:
+      auto: update
+  flyway:
+    enabled: false
+tenants:
+  datasources:
+    vw:
+      jdbcUrl: "jdbc:mysql://localhost:3306/vm?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
+      driverClassName: com.mysql.cj.jdbc.Driver
+      username: "root"
+      password: "admin"
+    bmw:
+      jdbcUrl: "jdbc:mysql://localhost:3306/bmw?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
+      driverClassName: com.mysql.cj.jdbc.Driver
+      username: "root"
+      password: "admin"
