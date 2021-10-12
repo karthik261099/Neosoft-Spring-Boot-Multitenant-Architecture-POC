@@ -22,7 +22,7 @@ server:
 spring:
   jpa:
     show-sql: true
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
   hibernate:
     hbm2ddl:
       auto: update
