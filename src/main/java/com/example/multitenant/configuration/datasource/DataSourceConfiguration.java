@@ -1,4 +1,4 @@
-package de.kuksin.multitenant.configuration.datasource;
+package com.example.multitenant.configuration.datasource;
 
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;

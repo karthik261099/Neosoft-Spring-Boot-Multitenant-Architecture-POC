@@ -1,4 +1,4 @@
-package de.kuksin.multitenant;
+package com.example.multitenant;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

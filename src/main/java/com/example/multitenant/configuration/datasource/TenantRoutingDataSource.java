@@ -1,7 +1,6 @@
-package de.kuksin.multitenant.configuration.datasource;
+package com.example.multitenant.configuration.datasource;
 
-import de.kuksin.multitenant.configuration.web.ThreadTenantStorage;
-import org.apache.commons.lang3.ObjectUtils;
+import com.example.multitenant.configuration.web.ThreadTenantStorage;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 

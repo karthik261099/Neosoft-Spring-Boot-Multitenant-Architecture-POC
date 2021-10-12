@@ -1,4 +1,4 @@
-package de.kuksin.multitenant.entities;
+package com.example.multitenant.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

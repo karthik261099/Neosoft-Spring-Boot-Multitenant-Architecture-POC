@@ -1,4 +1,4 @@
-package de.kuksin.multitenant.configuration.datasource;
+package com.example.multitenant.configuration.datasource;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;

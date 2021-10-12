@@ -1,7 +1,7 @@
-package de.kuksin.multitenant;
+package com.example.multitenant;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.kuksin.multitenant.entities.Car;
+import com.example.multitenant.entities.Car;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

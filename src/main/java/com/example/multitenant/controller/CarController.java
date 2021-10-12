@@ -1,7 +1,7 @@
-package de.kuksin.multitenant.controller;
+package com.example.multitenant.controller;
 
-import de.kuksin.multitenant.entities.Car;
-import de.kuksin.multitenant.repositories.CarRepository;
+import com.example.multitenant.repositories.CarRepository;
+import com.example.multitenant.entities.Car;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

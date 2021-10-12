@@ -1,4 +1,4 @@
-package de.kuksin.multitenant.configuration.web;
+package com.example.multitenant.configuration.web;
 
 
 import org.springframework.context.annotation.Configuration;
