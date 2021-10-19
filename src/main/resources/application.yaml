@@ -28,15 +28,29 @@ spring:
       auto: update
   flyway:
     enabled: false
-tenants:
-  datasources:
-    vw:
-      jdbcUrl: "jdbc:mysql://localhost:3306/vm?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
-      driverClassName: com.mysql.cj.jdbc.Driver
-      username: "root"
-      password: "admin"
-    bmw:
-      jdbcUrl: "jdbc:mysql://localhost:3306/bmw?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
-      driverClassName: com.mysql.cj.jdbc.Driver
-      username: "root"
-      password: "admin"
+#tenants:
+#  datasources:
+#    vw:
+#      jdbcUrl: "jdbc:mysql://localhost:3306/vm?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
+#      driverClassName: com.mysql.cj.jdbc.Driver
+#      username: "root"
+#      password: "admin"
+#    bmw:
+#      jdbcUrl: "jdbc:mysql://localhost:3306/bmw?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true"
+#      driverClassName: com.mysql.cj.jdbc.Driver
+#      username: "root"
+#      password: "admin"
+
+multitenancy:
+  mtapp:
+    master:
+      datasource:
+        url: jdbc:mysql://localhost:3306/master_db?useSSL=false
+        username: root
+        password: admin
+        driverClassName: com.mysql.cj.jdbc.Driver
+        connectionTimeout: 20000
+        maxPoolSize: 250
+        idleTimeout: 300000
+        minIdle: 5
+        poolName: masterdb-connection-pool

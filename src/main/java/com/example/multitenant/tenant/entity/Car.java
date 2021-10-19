@@ -1,4 +1,4 @@
-package com.example.multitenant.entities;
+package com.example.multitenant.tenant.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,7 +1,7 @@
 package com.example.multitenant.controller;
 
-import com.example.multitenant.repositories.CarRepository;
-import com.example.multitenant.entities.Car;
+import com.example.multitenant.tenant.repository.CarRepository;
+import com.example.multitenant.tenant.entity.Car;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
